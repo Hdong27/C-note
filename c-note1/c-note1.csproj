@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F14D95E7-7239-4726-AFB6-B959FA46844C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>c_note1</RootNamespace>
+    <AssemblyName>c-note1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ㅁㄴ.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BTPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTPage.Designer.cs">
+      <DependentUpon>BTPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_noteR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_noteR.Designer.cs">
+      <DependentUpon>C_noteR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_main.Designer.cs">
+      <DependentUpon>C_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_noteL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_noteL.Designer.cs">
+      <DependentUpon>C_noteL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSViewer.Designer.cs">
+      <DependentUpon>MSViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PDFViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PDFViewer.Designer.cs">
+      <DependentUpon>PDFViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="note_T.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="note_T.Designer.cs">
+      <DependentUpon>note_T.cs</DependentUpon>
+    </Compile>
+    <Compile Include="note_P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="note_P.Designer.cs">
+      <DependentUpon>note_P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BTPage.resx">
+      <DependentUpon>BTPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_main.resx">
+      <DependentUpon>C_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_noteR.resx">
+      <DependentUpon>C_noteR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_noteL.resx">
+      <DependentUpon>C_noteL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSViewer.resx">
+      <DependentUpon>MSViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PDFViewer.resx">
+      <DependentUpon>PDFViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="note_T.resx">
+      <DependentUpon>note_T.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="note_P.resx">
+      <DependentUpon>note_P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eraser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EraserCursor.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaintCursor.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PenCursor.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PenCursor_small.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shapes_Rectangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ShapesCursor.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxSHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cb26b9edcc7ea1370b4721751ad00159.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KakaoTalk_20180619_133500620.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KakaoTalk_20180619_133500736.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KakaoTalk_20180619_134337373.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\KakaoTalk_20180619_143039995.png" />
+    <Content Include="Resources\KakaoTalk_20180619_143744074.png" />
+    <Content Include="Resources\KakaoTalk_20180619_163722997.png" />
+    <Content Include="Resources\KakaoTalk_20180619_164724925.png" />
+    <Content Include="ㅁㄴ.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
